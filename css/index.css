@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  min-height: 100vh;
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wrap {
+  border: 1px solid black;
+}
+
+header {
+  padding: 2rem;
+}
+
+.logo_box {
+  margin-block-end: 3rem;
+}
+.logo_box img {
+  width: 35%;
+  min-width: 5.625rem;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-size: 1.875rem;
+  margin-block-end: 1rem;
+}
+
+header p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
+  margin-block-end: 3rem;
+}
+
+.dowload_button button {
+  border: none;
+  font-size: 1.125rem;
+  display: block;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.875rem 0;
+  font-weight: 500;
+  border-bottom: 0.25rem solid;
+}
+.dowload_button button:nth-child(1) {
+  background-color: hsl(171, 66%, 44%);
+  border-color: hsl(171, 66%, 30%);
+  box-shadow: 0 0.5rem 1rem hsla(171, 66%, 44%, 0.5);
+  margin-block-end: 1.5rem;
+}
+.dowload_button button:nth-child(2) {
+  background-color: hsl(233, 100%, 69%);
+  border-color: hsl(233, 50%, 50%);
+  box-shadow: 0 0.5rem 1rem hsla(233, 100%, 69%, 0.5);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: blue;
+}

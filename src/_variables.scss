@@ -1,0 +1,24 @@
+@use 'functions' as *;
+
+// colors
+$dark-green: hsl(171, 66%, 30%);
+$green: hsl(171, 66%, 44%);
+$dark-blue: hsl(233, 50%, 50%);
+$blue: hsl(233, 100%, 69%);
+$gray: hsl(210, 10%, 33%);
+$light-gray: hsl(201, 11%, 66%);
+$white: hsl(0, 0%, 100%);
+
+//shadow
+$light-green-shadow: hsla(171, 66%, 44%, 0.5);
+$light-blue-shadow: hsl(233, 100%, 69%, 0.5);
+
+// font-weight
+$w400: 400;
+$w500: 500;
+$w600: 600;
+
+// font-size
+$base-fs: rem(16);
+$large-fs: rem(18);
+$header-fs: rem(30);
