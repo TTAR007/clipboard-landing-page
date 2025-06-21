@@ -7,6 +7,7 @@ $dark-blue: hsl(233, 50%, 50%);
 $blue: hsl(233, 100%, 69%);
 $gray: hsl(210, 10%, 33%);
 $light-gray: hsl(201, 11%, 66%);
+$very-light-gray: hsl(201, 11%, 95%);
 $white: hsl(0, 0%, 100%);
 
 //shadow
@@ -19,6 +20,10 @@ $w500: 500;
 $w600: 600;
 
 // font-size
+$small-fs: rem(15);
 $base-fs: rem(16);
 $large-fs: rem(18);
+
 $header-fs: rem(30);
+$sub-head-fs: rem(28);
+$sub-head-small-fs: rem(24);

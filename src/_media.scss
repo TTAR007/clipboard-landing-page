@@ -1,0 +1,17 @@
+@use 'functions' as *;
+@use 'variables' as *;
+
+@media (min-width: rem(600)) {
+    main {
+        padding: 6rem;
+    }
+
+    .dowload_button {
+
+        button {
+            margin: 0 auto;
+            width: fit-content;
+            padding: rem(14) 6rem;
+        }
+    }
+}

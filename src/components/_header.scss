@@ -1,10 +1,6 @@
 @use 'functions' as *;
 @use 'variables' as *;
 
-header {
-    padding: 2rem;
-}
-
 .logo_box {
     margin-block-end: 3rem;
 
@@ -24,11 +20,15 @@ h1 {
     margin-block-end: 1rem;
 }
 
+header {
+    padding: 5rem 0;
+    margin-block-end: 5rem;
+}
+
 header p {
     color: $light-gray;
     text-align: center;
     font-weight: $w400;
-    line-height: 150%;
     margin-block-end: 3rem;
 }
 
