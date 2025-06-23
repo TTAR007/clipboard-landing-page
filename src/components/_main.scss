@@ -6,7 +6,7 @@
 .supercharge_box,
 .download-clipboard_box {
     h2 {
-        font-size: $sub-head-fs;
+        font-size: clamp($sub-head-fs, 1.45rem + 1.28vw, 2.25rem);
         font-weight: $w600;
         color: $gray;
         text-align: center;
@@ -123,7 +123,7 @@
 }
 
 .download-clipboard_box {
-    margin-block-end: 5rem;
+    margin-block-end: 7rem;
 
     h2 {
         margin-block-end: 1rem;

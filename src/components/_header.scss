@@ -16,7 +16,7 @@ h1 {
     font-weight: $w600;
     text-align: center;
     color: $gray;
-    font-size: $header-fs;
+    font-size: clamp($header-fs, 1.2rem + 2.88vw, 3rem);
     margin-block-end: 1rem;
 }
 
@@ -56,5 +56,11 @@ header p {
         background-color: $blue;
         border-color: $dark-blue;
         box-shadow: 0 rem(8) 1rem $light-blue-shadow;
+    }
+
+    button:hover {
+        opacity: 0.8;
+        box-shadow: rem(8) rem(8) 1rem $black;
+        cursor: pointer;
     }
 }

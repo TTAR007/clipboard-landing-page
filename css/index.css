@@ -16,6 +16,7 @@ body {
 
 p {
   line-height: 150%;
+  font-size: clamp(1rem, 0.7917rem + 0.8889vw, 1.125rem);
 }
 
 .wrap {
@@ -32,6 +33,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo_box {
   margin-block-end: 3rem;
 }
@@ -46,7 +51,7 @@ h1 {
   font-weight: 600;
   text-align: center;
   color: hsl(210, 10%, 33%);
-  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 1.2rem + 2.88vw, 3rem);
   margin-block-end: 1rem;
 }
 
@@ -84,12 +89,17 @@ header p {
   border-color: hsl(233, 50%, 50%);
   box-shadow: 0 0.5rem 1rem hsla(233, 100%, 69%, 0.5);
 }
+.dowload_button button:hover {
+  opacity: 0.8;
+  box-shadow: 0.5rem 0.5rem 1rem hsl(0, 0%, 0%);
+  cursor: pointer;
+}
 
 .snippets_box h2,
 .clipboard_box h2,
 .supercharge_box h2,
 .download-clipboard_box h2 {
-  font-size: 1.75rem;
+  font-size: clamp(1.75rem, 1.45rem + 1.28vw, 2.25rem);
   font-weight: 600;
   color: hsl(210, 10%, 33%);
   text-align: center;
@@ -191,7 +201,7 @@ header p {
 }
 
 .download-clipboard_box {
-  margin-block-end: 5rem;
+  margin-block-end: 7rem;
 }
 .download-clipboard_box h2 {
   margin-block-end: 1rem;
@@ -210,14 +220,22 @@ footer {
   margin: 0 auto;
 }
 
-.footer-paragraph {
-  margin: 2rem 0;
+.footer-link_box {
+  margin-block-start: 2.5rem;
+  margin-block-end: 1.25rem;
+  display: flex;
+  flex-direction: column;
 }
-.footer-paragraph p {
-  text-align: center;
-  padding: 0.75rem 0;
+.footer-link_box a {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-block-end: 1.75rem;
   color: hsl(210, 10%, 33%);
   font-weight: 500;
+}
+.footer-link_box a:hover {
+  text-decoration: underline;
 }
 
 .social-icons_box {
@@ -228,6 +246,10 @@ footer {
 }
 .social-icons_box img {
   width: max-content;
+}
+.social-icons_box img:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .attribution {
@@ -242,9 +264,134 @@ footer {
   main {
     padding: 6rem;
   }
+  body {
+    background-image: url("../images/bg-header-desktop.png");
+  }
   .dowload_button button {
     margin: 0 auto;
     width: fit-content;
     padding: 0.875rem 6rem;
+  }
+  .download-clipboard_box {
+    margin-block-end: 2rem;
+  }
+  footer {
+    padding: 3rem 5rem;
+  }
+  .footer-and-paragrph {
+    display: flex;
+    align-items: center;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    margin-block-end: 1.5rem;
+  }
+  .footer-link_box {
+    flex: 1;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .footer-link_box a {
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: start;
+  }
+  .social-icons_box {
+    justify-content: end;
+  }
+}
+@media (min-width: 68.75rem) {
+  p {
+    width: 55ch;
+    margin-inline: auto;
+  }
+  .dowload_button {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .dowload_button button:nth-child(1),
+  .dowload_button button:nth-child(2) {
+    margin: 0;
+    padding: 0.875rem 3rem;
+  }
+  .computer_box {
+    display: grid;
+    grid-template-columns: 1fr 31.25rem;
+    align-items: center;
+    max-width: 87.5rem;
+  }
+  .computer_box figure {
+    margin-inline-end: 2rem;
+    margin-block-end: 0;
+    max-width: fit-content;
+  }
+  .computer_box figure img {
+    margin: 0;
+    max-width: max-content;
+    transform: translateX(-6rem);
+  }
+  .computer_box p {
+    width: 80%;
+    margin: 0;
+  }
+  .functions-1_box article {
+    margin-block-end: 2rem;
+  }
+  .functions-1_box article h2, .functions-1_box article p {
+    text-align: start;
+  }
+  .devices_box img {
+    max-width: max-content;
+  }
+  .functions-2_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 87.5rem;
+  }
+  .functions-2_box section {
+    margin-block-end: 0;
+  }
+  .functions-2_box section p {
+    width: 100%;
+  }
+  .company-logo_box {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    max-width: 87.5rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+  }
+  .footer-and-paragrph {
+    margin: 0;
+    flex: 1;
+  }
+}
+@media (min-width: 93.75rem) {
+  .computer_box,
+  .functions-2_box,
+  .company-logo_box {
+    margin-inline: auto;
+  }
+  footer {
+    padding: 3rem 18rem;
+  }
+  .footer-link_box {
+    justify-content: center;
+    gap: 3rem;
+  }
+  .footer-link_box a {
+    display: inline-block;
+  }
+  .footer-link_box div a:nth-child(1) {
+    margin-inline-end: 3rem;
+  }
+  .footer-and-paragrph {
+    max-width: 50rem;
   }
 }
