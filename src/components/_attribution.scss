@@ -1,8 +1,11 @@
 .attribution {
-    font-size: 11px;
-    text-align: center;
+    width: fit-content;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
 
     a {
-        color: blue;
+        color: rgb(0, 94, 255);
     }
 }

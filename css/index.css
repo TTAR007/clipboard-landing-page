@@ -211,6 +211,7 @@ header p {
 }
 
 footer {
+  position: relative;
   background-color: hsl(201, 11%, 95%);
   padding: 3rem;
 }
@@ -253,11 +254,14 @@ footer {
 }
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  width: fit-content;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
 }
 .attribution a {
-  color: blue;
+  color: rgb(0, 94, 255);
 }
 
 @media (min-width: 37.5rem) {

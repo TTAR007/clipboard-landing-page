@@ -2,6 +2,7 @@
 @use 'functions' as *;
 
 footer {
+    position: relative;
     background-color: $very-light-gray;
     padding: 3rem;
 }
